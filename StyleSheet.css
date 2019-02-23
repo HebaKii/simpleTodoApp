@@ -1,0 +1,13 @@
+﻿body {
+}
+input[type=text]{
+    /* display:none; */
+    
+}
+
+.done{
+    text-decoration:line-through;
+    opacity:.5;
+    
+}
+
