@@ -37,64 +37,10 @@
 
 	}
 
-
-
-	/*
-      var arr = [];
-  
-      $("#add").click(function () {
-          $("#newtask").show(function () {
-              var arr = [];
-              arr.push(string);
-              for (var tasks = 0; tasks < arr.length; tasks++) {
-                  consol.log(tasks);
-              }
-              });
-  
-  
-      })
-  
-      $("#newtask").append("#list");
-     
-      -----------------------------------------------------------------------------------
-      */
-
-
-
-
-	// var newtask = [];
-
-	// $('#list').html(localStorage.getItem('list'));
-
 	$('todo').submit(function (event) {
 		event.preventDefault();
 
 
 	});
-
-	$("#new").click(
-		function () {
-			$("#newtask").show(function show() {
-
-				$('#add').click(function write() {
-
-					var newtask = $('#newtask').val();
-
-
-					$('#list').append('<li><input class="complete"  id="item" type="checkbox"/>' + newtask + '<span aria-hidden="true"  class="deletetask">&times;</span></li>');
-					app.tasks.push(newtask);
-					localStorage.setItem('app', JSON.stringify(app));
-					$('#newtask').val("");
-
-
-
-
-
-
-				});
-
-			});
-
-		});
 
 });
