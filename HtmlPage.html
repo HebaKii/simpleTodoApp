@@ -4,22 +4,24 @@
     <title></title>
 	<meta charset="utf-8" />
 
-    <link href="bootstrap-4.2.1-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" />
     <link href="StyleSheet.css" rel="stylesheet" />
     <!-- <script src="jqueryLibrary/jquery-1.11.3.min.js"></script> -->
-
+    <script src="bootstrap.bundle.min.js"></script>
     <script src="JS/jquery-3.3.1.min.js"></script>
     <script src="testScript.js"></script>
 </head>
 <body>
    
-    <h1>Tasks</h1>
-
-    <ul id="list">
+    <div class="mainbox">
         
+        <h1>Tasks</h1>
 
-    </ul>
-  
+        <ul id="list" class="list-group list-group-flush">
+           
+
+        </ul>
+    
     <!-- <button id="new" type="submit" formtarget="_blank">+</button> -->
 
     <!-- <form id="todo">
@@ -31,10 +33,12 @@
     </form> -->
 
 
-    <script src="bootstrap-4.2.1-dist/js/bootstrap.js"></script>
+    
 
-    <a href="./addTask.html">Add Task</a>
+    <a href="./addTask.html" class="btna btn btn-primary rounded-circle">+</a>
    
+</div>
+
 
 </body>
 </html>
