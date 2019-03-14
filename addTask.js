@@ -3,21 +3,26 @@ $(document).ready(function () {
 	var app = {
 		tasks: [],
 	}
-		
 	
+	var $add =$('#add');	
+	var $new =$('#newtask');
 
+
+	$add.on('click' , writeNewTask);
 
 	if (localStorageData) {
 		app = JSON.parse(localStorageData);
 	}
-		$('#add').click(function write() {
-			var newtask = $('#newtask').val();
+		
+		
+		function writeNewTask() {
+			var newtask = $new.val();
 			
 			$('#list').append('<li><input class="complete"  id="item" type="checkbox"/>' + newtask + '<span aria-hidden="true"  class="deletetask">&times;</span></li>');
 			app.tasks.push(newtask);
 			localStorage.setItem('app', JSON.stringify(app));
-			$('#newtask').val("");
-		});
+			$new.val("");
+		};
 
 		
 		
