@@ -1,8 +1,12 @@
 $(document).ready(function () {
 	var localStorageData = localStorage.getItem('app');
 	var app = {
-		tasks: []
+		tasks: [],
 	}
+		
+	
+
+
 	if (localStorageData) {
 		app = JSON.parse(localStorageData);
 	}
@@ -14,4 +18,12 @@ $(document).ready(function () {
 			localStorage.setItem('app', JSON.stringify(app));
 			$('#newtask').val("");
 		});
+
+		
+		
+			
+
+
+
+
 	});
